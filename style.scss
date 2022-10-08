@@ -525,6 +525,10 @@ body {
     }
   }
 
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    max-width: 728px;
+  }
+
   @media screen and (min-width: 400px) {
     .es-kv__header {
       padding: 180px 10px 0 10px;
@@ -575,6 +579,15 @@ body {
       &__packshot {
         display: none;
       }
+
+      &__subtitle {
+        font-size: 16px;
+        min-height: 42px;
+      }
+
+      &__single {
+        max-width: 180px;
+      }
     }
 
     .es-benefits {
@@ -613,12 +626,15 @@ body {
       }
 
       &__subtitle {
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 16px;
         padding-bottom: 0;
       }
 
       &__title {
         padding-top: 0;
+        padding: 5px 10px;
+        font-size: 22px;
         text-align: left;
       }
 
@@ -643,13 +659,15 @@ body {
       &__header {
         position: relative;
         max-width: 500px;
-        padding: 150px 60px 0 60px;
+        padding: 150px 10px 0 10px;
         font-size: 18px;
         z-index: 1;
       }
 
       &__animated-item {
-        margin-top: -40px;
+        width: 94%;
+        height: auto;
+        margin-top: -15px;
       }
     }
     .es-info {
@@ -668,7 +686,7 @@ body {
 
     .es-use {
       margin-top: -130px;
-      background-position: -250px 50%;
+      background-position: -360px 50%;
       min-height: 763px;
       display: flex;
       align-items: center;
@@ -688,7 +706,7 @@ body {
     }
 
     .es-banner {
-      background: url('images/bg-2.png') no-repeat right center;
+      background: url('images/bg-2.png') no-repeat 130px center;
       min-height: 442px;
       display: flex;
       align-items: center;
@@ -748,17 +766,46 @@ body {
         margin-left: 10%;
       }
     }
+
+    .es-cross {
+      &__container {
+        justify-content: space-between;
+      }
+
+      &__single {
+        max-width: 200px;
+
+        &--second {
+          margin-left: -20px;
+        }
+
+        &--third {
+          margin-right: 35px;
+        }
+      }
+    }
+
+    .es-ingr {
+      &__label {
+        width: 404px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: 682px;
   }
 
   @media screen and (min-width: 920px) {
     .es-kv {
       &__title {
-        font-size: 38px;
+        font-size: 25px;
         line-height: 0.9;
       }
 
       &__subtitle {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
 
@@ -766,7 +813,7 @@ body {
       margin-left: 2%;
 
       &__border {
-        width: 530px;
+        width: 410px;
       }
 
       &__title {
@@ -787,42 +834,18 @@ body {
         margin-bottom: 45px;
       }
       &__content {
-        margin-left: 13%;
+        margin-left: 8%;
       }
     }
 
     .es-use {
-      background-position: -60px 50%;
+      // background-position: -60px 50%;
     }
 
     .es-cross {
       &__title {
         margin-bottom: 60px;
         font-size: 26px;
-      }
-
-      &__container {
-        justify-content: space-around;
-      }
-
-      &__single {
-        max-width: 260px;
-
-        &--second {
-          max-width: 231px;
-          margin-left: -20px;
-        }
-
-        &--third {
-          margin-right: 50px;
-        }
-      }
-    }
-
-    .es-ingr {
-      &__label {
-        width: 404px;
-        font-size: 24px;
       }
     }
   }
